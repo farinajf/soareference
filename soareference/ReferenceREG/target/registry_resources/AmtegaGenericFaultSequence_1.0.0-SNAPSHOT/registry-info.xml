@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <item>
+        <file>AmtegaGenericFaultSequence.xml</file>
+        <path>/_system/governance/amtega</path>
+        <mediaType>application/vnd.wso2.sequence</mediaType>
+    </item>
+</resources>

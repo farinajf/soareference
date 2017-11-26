@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="AmtegaGenericHTTPEndpointTemplate" groupId="es.xunta.amtega.soa.resource" version="1.0.0-SNAPSHOT" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>AmtegaGenericHTTPEndpointTemplate.xml</file>
+            <path>/_system/governance/amtega</path>
+            <mediaType>application/vnd.wso2.template.endpoint</mediaType>
+        </item>
+    </artifact>
+    <artifact name="AmtegaGenericEndpointTemplate" groupId="es.xunta.amtega.soa.resource" version="1.0.0-SNAPSHOT" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>AmtegaGenericEndpointTemplate.xml</file>
+            <path>/_system/governance/amtega</path>
+            <mediaType>application/vnd.wso2.template.endpoint</mediaType>
+        </item>
+    </artifact>
+    <artifact name="AmtegaGenericFaultSequence" groupId="es.xunta.amtega.soa.resource" version="1.0.0-SNAPSHOT" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>AmtegaGenericFaultSequence.xml</file>
+            <path>/_system/governance/amtega</path>
+            <mediaType>application/vnd.wso2.sequence</mediaType>
+        </item>
+    </artifact>
+</artifacts>

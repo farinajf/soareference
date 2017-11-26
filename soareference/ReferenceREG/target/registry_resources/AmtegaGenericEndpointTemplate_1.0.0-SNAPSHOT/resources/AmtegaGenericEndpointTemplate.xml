@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="AmtegaGenericEndpointTemplate" xmlns="http://ws.apache.org/ns/synapse">
+    <endpoint name="$name">
+        <address uri="$uri">
+            <timeout>
+                <duration>10</duration>
+                <responseAction>fault</responseAction>
+            </timeout>
+            <suspendOnFailure>
+                <errorCodes>101504,101505</errorCodes>
+                <initialDuration>5000</initialDuration>
+                <progressionFactor>1.1</progressionFactor>
+                <maximumDuration>30000</maximumDuration>
+            </suspendOnFailure>
+            <markForSuspension>
+                <errorCodes>-1</errorCodes>
+                <retriesBeforeSuspension>1</retriesBeforeSuspension>
+                <retryDelay>1</retryDelay>
+            </markForSuspension>
+        </address>
+    </endpoint>
+</template>
