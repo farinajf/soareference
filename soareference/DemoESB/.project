@@ -3,6 +3,7 @@
 	<name>DemoESB</name>
 	<comment></comment>
 	<projects>
+		<project>ReferenceREG</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>

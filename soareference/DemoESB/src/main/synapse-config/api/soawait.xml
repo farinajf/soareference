@@ -2,8 +2,8 @@
 <api context="/soawait" name="soawait" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET">
         <inSequence>
-            <script language="js"><![CDATA[for (x=1;x<50000000;x++);var dt = new Date();
-		    dt.setTime(dt.getTime() + 30000);
+            <script language="js"><![CDATA[var dt = new Date();
+		    dt.setTime(dt.getTime() + 120000);
 		    while (new Date().getTime() < dt.getTime());]]></script>
             <property name="ContentType" scope="axis2" type="STRING" value="text/xml"/>
             <payloadFactory media-type="xml">
