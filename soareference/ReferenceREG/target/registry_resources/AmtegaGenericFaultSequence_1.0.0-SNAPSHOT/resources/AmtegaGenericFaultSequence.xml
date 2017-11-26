@@ -20,7 +20,7 @@
                     <AmtegaFaultResponse xmlns="">
                         <error>
                             <url>$1</url>
-                            <errorCode>101504</errorCode>
+                            <errorCode>101508</errorCode>
                             <errorMsgTitle>Error en el envío</errorMsgTitle>
                             <errorMsg>Error en el envío</errorMsg>
                         </error>

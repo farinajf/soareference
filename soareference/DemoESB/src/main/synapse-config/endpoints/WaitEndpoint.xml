@@ -2,19 +2,19 @@
 <endpoint name="WaitEndpoint" xmlns="http://ws.apache.org/ns/synapse">
     <http method="get" uri-template="http://localhost:8280/soawait">
         <timeout>
-            <duration>100</duration>
+            <duration>1</duration>
             <responseAction>fault</responseAction>
         </timeout>
         <suspendOnFailure>
-            <errorCodes>101504</errorCodes>
-            <initialDuration>20000</initialDuration>
+            <errorCodes>101503</errorCodes>
+            <initialDuration>60000</initialDuration>
             <progressionFactor>1.1</progressionFactor>
-            <maximumDuration>30000</maximumDuration>
+            <maximumDuration>90000</maximumDuration>
         </suspendOnFailure>
         <markForSuspension>
-            <errorCodes>-1</errorCodes>
-            <retriesBeforeSuspension>1</retriesBeforeSuspension>
-            <retryDelay>1</retryDelay>
+            <errorCodes>101504</errorCodes>
+            <retriesBeforeSuspension>4</retriesBeforeSuspension>
+            <retryDelay>20000</retryDelay>
         </markForSuspension>
     </http>
 </endpoint>
