@@ -1,0 +1,5 @@
+<data name="EMPLEADOS_DataService" serviceGroup="" serviceNamespace="http://ws.wso2.org/dataservice">
+    <config id="SAMPLE_DB">
+        <property name="carbon_datasource_name">SAMPLE_DB</property>
+    </config>
+</data>
