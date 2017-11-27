@@ -2,10 +2,13 @@
     <artifact name="soawait" groupId="es.xunta.amtega.soa.api" version="1.0.0-SNAPSHOT" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/soawait.xml</file>
     </artifact>
-    <artifact name="WaitEndpoint" groupId="es.xunta.amtega.soa.endpoint" version="1.0.0-SNAPSHOT" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/endpoints/WaitEndpoint.xml</file>
-    </artifact>
     <artifact name="WaitProxy" groupId="es.xunta.amtega.soa.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/WaitProxy.xml</file>
+    </artifact>
+    <artifact name="WaitEnpoint2" groupId="es.xunta.amtega.soa.endpoint" version="1.0.0-SNAPSHOT" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/WaitEnpoint2.xml</file>
+    </artifact>
+    <artifact name="WaitEndpoint3" groupId="es.xunta.amtega.soa.endpoint" version="1.0.0-SNAPSHOT" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/WaitEndpoint3.xml</file>
     </artifact>
 </artifacts>

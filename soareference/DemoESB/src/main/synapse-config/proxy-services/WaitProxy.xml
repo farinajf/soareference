@@ -3,7 +3,7 @@
     <target faultSequence="gov:amtega/AmtegaGenericFaultSequence.xml">
         <inSequence>
             <send>
-                <endpoint key="WaitEndpoint"/>
+                <endpoint key="WaitEndpoint2"/>
             </send>
         </inSequence>
         <outSequence>

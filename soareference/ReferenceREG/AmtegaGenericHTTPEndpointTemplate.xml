@@ -7,15 +7,15 @@
                 <responseAction>fault</responseAction>
             </timeout>
             <suspendOnFailure>
-                <errorCodes>101504</errorCodes>
-                <initialDuration>5000</initialDuration>
+                <errorCodes>101503</errorCodes>
+                <initialDuration>60000</initialDuration>
                 <progressionFactor>1.1</progressionFactor>
-                <maximumDuration>30000</maximumDuration>
+                <maximumDuration>90000</maximumDuration>
             </suspendOnFailure>
             <markForSuspension>
-                <errorCodes>-1</errorCodes>
-                <retriesBeforeSuspension>1</retriesBeforeSuspension>
-                <retryDelay>1</retryDelay>
+                <errorCodes>101504</errorCodes>
+                <retriesBeforeSuspension>3</retriesBeforeSuspension>
+                <retryDelay>30000</retryDelay>
             </markForSuspension>
         </http>
     </endpoint>

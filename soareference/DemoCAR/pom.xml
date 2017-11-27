@@ -15,10 +15,38 @@
   <description>DemoCAR</description>
   <properties>
     <es.xunta.amtega.soa.api_._soawait>capp/EnterpriseServiceBus</es.xunta.amtega.soa.api_._soawait>
+    <es.xunta.amtega.soa.endpoint_._WaitEnpoint2>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEnpoint2>
+    <es.xunta.amtega.soa.endpoint_._WaitEndpoint3>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint3>
     <es.xunta.amtega.soa.proxy-service_._WaitProxy>capp/EnterpriseServiceBus</es.xunta.amtega.soa.proxy-service_._WaitProxy>
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint>
     <artifact.types>synapse/priority-executor=xml,jaggery/app=zip,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,service/meta=xml,event/stream=json,datasource/datasource=xml,synapse/proxy-service=xml,synapse/sequence=xml,bpel/workflow=zip,synapse/endpointTemplate=xml,carbon/application=car,synapse/api=xml,wso2/gadget=dar,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/local-entry=xml,synapse/task=xml,event/publisher=xml,synapse/configuration=xml,webapp/jaxws=war,registry/resource=zip,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
+  <dependencies>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.proxy-service</groupId>
+      <artifactId>WaitProxy</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.api</groupId>
+      <artifactId>soawait</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.endpoint</groupId>
+      <artifactId>WaitEnpoint2</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.endpoint</groupId>
+      <artifactId>WaitEndpoint3</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <releases>
