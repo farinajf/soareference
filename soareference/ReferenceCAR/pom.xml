@@ -14,19 +14,13 @@
   <name>ReferenceCAR</name>
   <description>ReferenceCAR</description>
   <properties>
-    <es.xunta.amtega.soa.resource_._AmtegaGenericHTTPEndpointTemplate>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericHTTPEndpointTemplate>
-    <es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>
-    <es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>
+    <es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>
+    <es.xunta.amtega.soa.resource_._AmtegaGenericHTTPEndpointTemplate>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericHTTPEndpointTemplate>
+    <es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>
     <artifact.types>synapse/priority-executor=xml,jaggery/app=zip,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,service/meta=xml,event/stream=json,datasource/datasource=xml,synapse/proxy-service=xml,synapse/sequence=xml,bpel/workflow=zip,synapse/endpointTemplate=xml,carbon/application=car,synapse/api=xml,wso2/gadget=dar,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/local-entry=xml,synapse/task=xml,event/publisher=xml,synapse/configuration=xml,webapp/jaxws=war,registry/resource=zip,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
-    <es.xunta.amtega.soa.resource_._WaitEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._WaitEndpoint>
+    <es.xunta.amtega.soa.resource_._WaitEndpoint>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._WaitEndpoint>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>es.xunta.amtega.soa.resource</groupId>
-      <artifactId>AmtegaGenericEndpointTemplate</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-      <type>zip</type>
-    </dependency>
     <dependency>
       <groupId>es.xunta.amtega.soa.resource</groupId>
       <artifactId>AmtegaGenericFaultSequence</artifactId>
@@ -42,6 +36,12 @@
     <dependency>
       <groupId>es.xunta.amtega.soa.resource</groupId>
       <artifactId>WaitEndpoint</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.resource</groupId>
+      <artifactId>AmtegaGenericEndpointTemplate</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>zip</type>
     </dependency>

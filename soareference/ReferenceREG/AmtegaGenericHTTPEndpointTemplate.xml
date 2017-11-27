@@ -14,7 +14,7 @@
             </suspendOnFailure>
             <markForSuspension>
                 <errorCodes>101504</errorCodes>
-                <retriesBeforeSuspension>3</retriesBeforeSuspension>
+                <retriesBeforeSuspension>4</retriesBeforeSuspension>
                 <retryDelay>30000</retryDelay>
             </markForSuspension>
         </http>
