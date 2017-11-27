@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="WaitEndpoint" template="gov:/amtega/AmtegaGenericHTTPEndpointTemplate.xml" uri="http://localhost:8280/soawait" xmlns="http://ws.apache.org/ns/synapse">
+    <description/>
+</endpoint>
