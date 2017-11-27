@@ -1,5 +1,5 @@
 <data name="EMPLEADOS_DataService" serviceNamespace="http://ws.wso2.org/dataservice" serviceStatus="active">
-    <config id="default">
+    <config id="SAMPLE_DB">
         <property name="carbon_datasource_name">EMPLEADOS_BD</property>
     </config>
     <query id="select_all_EMPLEADOS_query" useConfig="default">
