@@ -12,6 +12,8 @@
     <module>ReferenceREG</module>
     <module>DemoESB</module>
     <module>DemoDSS</module>
+    <module>ReferenceCAR</module>
+    <module>DemoCAR</module>
   </modules>
   <build>
     <plugins>
