@@ -34,4 +34,11 @@
             <mediaType>application/vnd.wso2.sequence</mediaType>
         </item>
     </artifact>
+    <artifact name="AmtegaGenericOutSequence" groupId="es.xunta.amtega.soa.resource" version="1.0.0-SNAPSHOT" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>AmtegaGenericOutSequence.xml</file>
+            <path>/_system/governance/amtega</path>
+            <mediaType>application/vnd.wso2.sequence</mediaType>
+        </item>
+    </artifact>
 </artifacts>
