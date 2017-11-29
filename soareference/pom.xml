@@ -15,6 +15,10 @@
     <module>ReferenceCAR</module>
     <module>DemoCAR</module>
   </modules>
+  <properties>
+    <maven.car.deploy.skip>true</maven.car.deploy.skip>
+    <maven.deploy.skip>true</maven.deploy.skip>
+  </properties>
   <build>
     <plugins>
       <plugin>
