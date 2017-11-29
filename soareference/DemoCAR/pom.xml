@@ -16,11 +16,14 @@
   <properties>
     <es.xunta.amtega.soa.DemoDSS.dataservice_._EMPLEADOS_DataService>capp/DataServicesServer</es.xunta.amtega.soa.DemoDSS.dataservice_._EMPLEADOS_DataService>
     <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
+    <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <es.xunta.amtega.soa.api_._soawait>capp/EnterpriseServiceBus</es.xunta.amtega.soa.api_._soawait>
+    <es.xunta.amtega.soa.endpoint_._WaitEndpoint4>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint4>
     <es.xunta.amtega.soa.proxy-service_._WaitProxy>capp/EnterpriseServiceBus</es.xunta.amtega.soa.proxy-service_._WaitProxy>
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint>
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint3>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint3>
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint2>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint2>
+    <maven.deploy.skip>true</maven.deploy.skip>
   </properties>
   <dependencies>
     <dependency>
@@ -52,6 +55,12 @@
       <artifactId>EMPLEADOS_DataService</artifactId>
       <version>1.0.0</version>
       <type>dbs</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.endpoint</groupId>
+      <artifactId>WaitEndpoint4</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
     </dependency>
   </dependencies>
   <repositories>
