@@ -14,13 +14,16 @@
   <name>ReferenceCAR</name>
   <description>ReferenceCAR</description>
   <properties>
-    <maven.car.deploy.skip>false</maven.car.deploy.skip>
-    <es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>
     <es.xunta.amtega.soa.resource_._AmtegaGenericHTTPEndpointTemplate>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericHTTPEndpointTemplate>
-    <es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
+    <es.xunta.amtega.soa.resource_._AmtegaGenericOutSequence>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericOutSequence>
+    <maven.car.deploy.skip>false</maven.car.deploy.skip>
+    <es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>
+    <es.xunta.amtega.soa.resource_._AmtegaGenericInSequence>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericInSequence>
     <es.xunta.amtega.soa.resource_._WaitEndpoint>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._WaitEndpoint>
+    <maven.deploy.skip>true</maven.deploy.skip>
+    <es.xunta.amtega.soa.resource_._EmpleadosEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._EmpleadosEndpoint>
+    <es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>
   </properties>
   <dependencies>
     <dependency>
@@ -44,6 +47,24 @@
     <dependency>
       <groupId>es.xunta.amtega.soa.resource</groupId>
       <artifactId>AmtegaGenericEndpointTemplate</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.resource</groupId>
+      <artifactId>AmtegaGenericOutSequence</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.resource</groupId>
+      <artifactId>EmpleadosEndpoint</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.resource</groupId>
+      <artifactId>AmtegaGenericInSequence</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>zip</type>
     </dependency>
