@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="EmpleadosProxy" startOnLoad="true" statistics="enable" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target faultSequence="gov:amtega/AmtegaGenericFaultSequence.xml">
+        <inSequence>
+            <sequence key="gov:amtega/AmtegaGenericInSequence.xml"/>
+            <send>
+                <endpoint key="gov:amtega/EmpleadosEndpoint.xml"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <sequence key="gov:amtega/AmtegaGenericOutSequence.xml"/>
+            <send/>
+        </outSequence>
+    </target>
+    <publishWSDL uri="http://localhost:8280/services/EMPLEADOS_DataService?wsdl"/>
+</proxy>
