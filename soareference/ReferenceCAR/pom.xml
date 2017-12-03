@@ -19,10 +19,10 @@
     <es.xunta.amtega.soa.resource_._AmtegaGenericOutSequence>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericOutSequence>
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericFaultSequence>
+    <es.xunta.amtega.soa.resource_._ThrottleSequence>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._ThrottleSequence>
     <es.xunta.amtega.soa.resource_._AmtegaGenericInSequence>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericInSequence>
     <es.xunta.amtega.soa.resource_._WaitEndpoint>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._WaitEndpoint>
     <maven.deploy.skip>true</maven.deploy.skip>
-    
     <es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>
   </properties>
   <dependencies>
@@ -56,9 +56,15 @@
       <version>1.0.0-SNAPSHOT</version>
       <type>zip</type>
     </dependency>
-        <dependency>
+    <dependency>
       <groupId>es.xunta.amtega.soa.resource</groupId>
       <artifactId>AmtegaGenericInSequence</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.resource</groupId>
+      <artifactId>ThrottleSequence</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>zip</type>
     </dependency>

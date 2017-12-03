@@ -82,7 +82,7 @@
                             <url>$1</url>
                             <errorCode>101505</errorCode>
                             <errorMsgTitle>Cuota Superada</errorMsgTitle>
-                            <errorMsg>Es necesario esperar 10 seg</errorMsg>
+                            <errorMsg>Se ha superado la cuota</errorMsg>
                         </error>
                     </AmtegaFaultResponse>
                 </format>

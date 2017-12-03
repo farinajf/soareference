@@ -3,7 +3,7 @@
     <target faultSequence="gov:amtega/AmtegaGenericFaultSequence.xml">
         <inSequence>
             <!--  <sequence key="gov:amtega/AmtegaGenericInSequence.xml"/> -->
-            <sequence key="ThrottleSequence2"/>
+            <sequence key="gov:amtega/ThrottleSequence.xml"/>
             <send>
                 <endpoint key="EmpleadosEndpoint"/>
             </send>
