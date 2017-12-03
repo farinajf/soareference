@@ -23,4 +23,7 @@
     <artifact name="ThrottleSequence2" groupId="es.xunta.amtega.soa.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/ThrottleSequence2.xml</file>
     </artifact>
+    <artifact name="EmpleadosProxy2" groupId="es.xunta.amtega.soa.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/EmpleadosProxy2.xml</file>
+    </artifact>
 </artifacts>

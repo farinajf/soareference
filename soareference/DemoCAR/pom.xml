@@ -23,6 +23,7 @@
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint4>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint4>
     <es.xunta.amtega.soa.proxy-service_._WaitProxy>capp/EnterpriseServiceBus</es.xunta.amtega.soa.proxy-service_._WaitProxy>
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint>
+    <es.xunta.amtega.soa.proxy-service_._EmpleadosProxy2>capp/EnterpriseServiceBus</es.xunta.amtega.soa.proxy-service_._EmpleadosProxy2>
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint3>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint3>
     <es.xunta.amtega.soa.endpoint_._WaitEndpoint2>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._WaitEndpoint2>
     <es.xunta.amtega.soa.endpoint_._EmpleadosEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.soa.endpoint_._EmpleadosEndpoint>
@@ -80,6 +81,12 @@
     <dependency>
       <groupId>es.xunta.amtega.soa.sequence</groupId>
       <artifactId>ThrottleSequence2</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.soa.proxy-service</groupId>
+      <artifactId>EmpleadosProxy2</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>xml</type>
     </dependency>
