@@ -14,10 +14,11 @@
   <name>EmpleadosCAR</name>
   <description>EmpleadosCAR</description>
   <properties>
-    <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
-    <es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>capp/DataServicesServer</es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>
+    <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
+    <es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>capp/DataServicesServer</es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>
   </properties>
   <dependencies>
     <dependency>
@@ -25,6 +26,12 @@
       <artifactId>Empleados1DSS</artifactId>
       <version>1.0.0</version>
       <type>dbs</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.endpoint</groupId>
+      <artifactId>EmpledadosWSDLEndpoint</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
     </dependency>
   </dependencies>
   <repositories>

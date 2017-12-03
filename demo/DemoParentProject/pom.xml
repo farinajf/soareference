@@ -10,6 +10,7 @@
   <description>DemoParentProject</description>
   <modules>
     <module>Empleados1DSS</module>
+    <module>EmpleadosESB</module>
     <module>EmpleadosCAR</module>
   </modules>
   <properties>

@@ -2,4 +2,7 @@
     <artifact name="EmpledadosWSDLEndpoint" groupId="es.xunta.amtega.deemo.EmpleadosESB.endpoint" version="1.0.0-SNAPSHOT" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/EmpledadosWSDLEndpoint.xml</file>
     </artifact>
+    <artifact name="EmpleadosProxy" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/EmpleadosProxy.xml</file>
+    </artifact>
 </artifacts>
