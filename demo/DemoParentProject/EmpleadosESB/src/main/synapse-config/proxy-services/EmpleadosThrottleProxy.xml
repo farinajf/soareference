@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="EmpleadosThrottleProxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <sequence key="ThrottleSequence"/>
+            <send>
+                <endpoint key="EmpledadosWSDLEndpoint"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>
