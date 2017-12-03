@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoint name="EmpledadosWSDLEndpoint" xmlns="http://ws.apache.org/ns/synapse">
-    <wsdl port="SOAP11Endpoint" service="Empleados1DSS" statistics="enable" trace="enable" uri="http://localhost:8280/services/Empleados1DSS?wsdl"/>
+    <wsdl port="SOAP11Endpoint" service="Empleados1DSS" statistics="enable" uri="http://localhost:8280/services/Empleados1DSS?wsdl"/>
 </endpoint>
