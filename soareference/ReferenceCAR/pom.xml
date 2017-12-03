@@ -22,7 +22,7 @@
     <es.xunta.amtega.soa.resource_._AmtegaGenericInSequence>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._AmtegaGenericInSequence>
     <es.xunta.amtega.soa.resource_._WaitEndpoint>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._WaitEndpoint>
     <maven.deploy.skip>true</maven.deploy.skip>
-    <es.xunta.amtega.soa.resource_._EmpleadosEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.soa.resource_._EmpleadosEndpoint>
+    
     <es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>capp/EnterpriseIntegrator</es.xunta.amtega.soa.resource_._AmtegaGenericEndpointTemplate>
   </properties>
   <dependencies>
@@ -56,13 +56,7 @@
       <version>1.0.0-SNAPSHOT</version>
       <type>zip</type>
     </dependency>
-    <dependency>
-      <groupId>es.xunta.amtega.soa.resource</groupId>
-      <artifactId>EmpleadosEndpoint</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
+        <dependency>
       <groupId>es.xunta.amtega.soa.resource</groupId>
       <artifactId>AmtegaGenericInSequence</artifactId>
       <version>1.0.0-SNAPSHOT</version>

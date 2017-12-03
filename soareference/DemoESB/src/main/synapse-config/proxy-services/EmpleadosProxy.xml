@@ -2,9 +2,10 @@
 <proxy name="EmpleadosProxy" startOnLoad="true" statistics="enable" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target faultSequence="gov:amtega/AmtegaGenericFaultSequence.xml">
         <inSequence>
-            <sequence key="gov:amtega/AmtegaGenericInSequence.xml"/>
+            <!--  <sequence key="gov:amtega/AmtegaGenericInSequence.xml"/> -->
+            <sequence key="ThrottleSequence2"/>
             <send>
-                <endpoint key="gov:amtega/EmpleadosEndpoint.xml"/>
+                <endpoint key="EmpleadosEndpoint"/>
             </send>
         </inSequence>
         <outSequence>

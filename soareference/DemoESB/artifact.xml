@@ -17,4 +17,10 @@
     <artifact name="EmpleadosProxy" groupId="es.xunta.amtega.soa.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/EmpleadosProxy.xml</file>
     </artifact>
+    <artifact name="EmpleadosEndpoint" groupId="es.xunta.amtega.soa.endpoint" version="1.0.0-SNAPSHOT" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/EmpleadosEndpoint.xml</file>
+    </artifact>
+    <artifact name="ThrottleSequence2" groupId="es.xunta.amtega.soa.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ThrottleSequence2.xml</file>
+    </artifact>
 </artifacts>
