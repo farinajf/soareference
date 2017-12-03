@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="CacheInSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full">
+        <property name="MESSAGE" value="Executing Cache In Sequence"/>
+    </log>
+    <cache collector="false" hashGenerator="org.wso2.carbon.mediator.cache.digest.DOMHASHGenerator" scope="per-host" timeout="10">
+        <onCacheHit/>
+        <implementation maxSize="100" type="memory"/>
+    </cache>
+</sequence>

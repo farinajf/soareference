@@ -7,7 +7,7 @@
         <policy>
             <wsp:Policy wsu:id="WSO2MediatorThrottlingPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
                 <throttle:MediatorThrottleAssertion xmlns:throttle="http://www.wso2.org/products/wso2commons/throttle">
-                    <throttle:MaximumConcurrentAccess>10000</throttle:MaximumConcurrentAccess>
+                    <throttle:MaximumConcurrentAccess>1</throttle:MaximumConcurrentAccess>
                     <wsp:Policy>
                         <throttle:ID throttle:type="IP">other</throttle:ID>
                         <wsp:Policy>

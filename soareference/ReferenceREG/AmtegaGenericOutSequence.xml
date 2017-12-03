@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sequence name="AmtegaGenericOutSequence" statistics="enable" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full">
+        <property name="MESSAGE" value="Executing Amtega Generic Out Sequence"/>
+    </log>
     <cache collector="true" scope="per-host"/>
 </sequence>
