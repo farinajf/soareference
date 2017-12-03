@@ -9,7 +9,7 @@
             </send>
         </inSequence>
         <outSequence>
-            <sequence key="gov:amtega/AmtegaGenericOutSequence.xml"/>
+            <sequence key="ThrottleSequence2"/>
             <send/>
         </outSequence>
     </target>

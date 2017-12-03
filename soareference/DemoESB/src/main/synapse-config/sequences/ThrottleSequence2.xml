@@ -16,11 +16,6 @@
             <property name="ERROR_MESSAGE" scope="default" type="STRING" value="Cuota Superada"/>
             <sequence key="gov:amtega/AmtegaGenericFaultSequence.xml"/>
         </onReject>
-        <onAccept>
-            <cache collector="false" hashGenerator="org.wso2.carbon.mediator.cache.digest.DOMHASHGenerator" scope="per-host" timeout="10">
-                <onCacheHit/>
-                <implementation maxSize="100" type="memory"/>
-            </cache>
-        </onAccept>
+        <onAccept/>
     </throttle>
 </sequence>
