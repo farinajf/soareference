@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="FaultSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full">
+        <property name="MESSAGE" value="Executing Amtega 'fault' sequence"/>
+        <property expression="get-property('ERROR_CODE')" name="ERROR_CODE" xmlns:ns="http://org.apache.synapse/xsd"/>
+        <property expression="get-property('ERROR_MESSAGE')" name="ERROR_MESSAGE" xmlns:ns="http://org.apache.synapse/xsd"/>
+    </log>
+    <property expression="get-property('ERROR_CODE')" name="ErrorCode" scope="default" type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
+    <log level="custom">
+        <property expression="$ctx:ErrorCode" name="testCode" xmlns:ns="http://org.apache.synapse/xsd"/>
+        <property expression="get-property('Action')" name="Action" xmlns:ns="http://org.apache.synapse/xsd"/>
+    </log>
+    <switch source="$ctx:ErrorCode" xmlns:ns="http://org.apache.synapse/xsd">
+        <case regex="101508">
+            <log>
+                <property name="ERROR" value="==== 101508 ==== Error en el envío"/>
+            </log>
+            <payloadFactory media-type="xml">
+                <format>
+                    <AmtegaFaultResponse xmlns="">
+                        <error>
+                            <url>$1</url>
+                            <errorCode>101508</errorCode>
+                            <errorMsgTitle>Error en el envío</errorMsgTitle>
+                            <errorMsg>Error en el envío</errorMsg>
+                        </error>
+                    </AmtegaFaultResponse>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('To')"/>
+                </args>
+            </payloadFactory>
+        </case>
+        <case regex="101504">
+            <log>
+                <property name="ERROR" value="==== 101504 ==== El endpoint dió timeout"/>
+            </log>
+            <payloadFactory media-type="xml">
+                <format>
+                    <AmtegaFaultResponse xmlns="">
+                        <error>
+                            <url>$1</url>
+                            <errorCode>101504</errorCode>
+                            <errorMsgTitle>El endpoint dió timeout</errorMsgTitle>
+                            <errorMsg>El endpoint dió timeout</errorMsg>
+                        </error>
+                    </AmtegaFaultResponse>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('To')"/>
+                </args>
+            </payloadFactory>
+        </case>
+        <case regex="303001">
+            <log>
+                <property name="ERROR" value="==== 303001 ==== El endpoint esta SUSPENDED"/>
+            </log>
+            <payloadFactory media-type="xml">
+                <format>
+                    <AmtegaFaultResponse xmlns="">
+                        <error>
+                            <url>$1</url>
+                            <errorCode>303001</errorCode>
+                            <errorMsgTitle>El endpoint esta SUSPENDED</errorMsgTitle>
+                            <errorMsg>Es necesario esperar 30 seg</errorMsg>
+                        </error>
+                    </AmtegaFaultResponse>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('To')"/>
+                </args>
+            </payloadFactory>
+        </case>
+        <case regex="101505">
+            <log>
+                <property name="ERROR" value="==== 101505 ==== Cuota superada"/>
+            </log>
+            <payloadFactory media-type="xml">
+                <format>
+                    <AmtegaFaultResponse xmlns="">
+                        <error>
+                            <url>$1</url>
+                            <errorCode>101505</errorCode>
+                            <errorMsgTitle>Cuota Superada</errorMsgTitle>
+                            <errorMsg>Se ha superado la cuota</errorMsg>
+                        </error>
+                    </AmtegaFaultResponse>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('To')"/>
+                </args>
+            </payloadFactory>
+        </case>
+        <case regex="101503">
+            <log>
+                <property name="ERROR" value="==== 101503 ==== Error conectandose al backend"/>
+            </log>
+            <payloadFactory media-type="xml">
+                <format>
+                    <AmtegaFaultResponse xmlns="">
+                        <error>
+                            <url>$1</url>
+                            <errorCode>101503</errorCode>
+                            <errorMsgTitle>Error conectandose al backend</errorMsgTitle>
+                            <errorMsg/>
+                        </error>
+                    </AmtegaFaultResponse>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('To')"/>
+                </args>
+            </payloadFactory>
+        </case>
+        <default/>
+    </switch>
+    <header action="remove" name="To" scope="default"/>
+    <property name="RESPONSE" scope="default" type="STRING" value="true"/>
+    <send/>
+</sequence>

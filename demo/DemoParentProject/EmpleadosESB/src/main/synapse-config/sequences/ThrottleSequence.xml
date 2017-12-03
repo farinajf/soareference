@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="ThrottleSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full">
+        <property name="MESSAGE" value="Executing Amtega Generic In sequence"/>
+    </log>
+    <throttle id="group_id">
+        <policy>
+            <wsp:Policy wsu:id="WSO2MediatorThrottlingPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <throttle:MediatorThrottleAssertion xmlns:throttle="http://www.wso2.org/products/wso2commons/throttle">
+                    <throttle:MaximumConcurrentAccess>10</throttle:MaximumConcurrentAccess>
+                </throttle:MediatorThrottleAssertion>
+            </wsp:Policy>
+        </policy>
+        <onReject>
+            <property name="ERROR_CODE" scope="default" type="STRING" value="101505"/>
+            <property name="ERROR_MESSAGE" scope="default" type="STRING" value="Cuota Superada"/>
+            <sequence key="FaultSequence.xml"/>
+        </onReject>
+        <onAccept/>
+    </throttle>
+</sequence>
