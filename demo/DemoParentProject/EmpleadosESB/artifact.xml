@@ -11,4 +11,7 @@
     <artifact name="FaultSequence" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/FaultSequence.xml</file>
     </artifact>
+    <artifact name="EmpleadosThrottleProxy" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/EmpleadosThrottleProxy.xml</file>
+    </artifact>
 </artifacts>
