@@ -2,6 +2,9 @@
 <proxy name="EmpleadosProxy" startOnLoad="true" statistics="enable" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <inSequence>
+            <log>
+                <property name="MESSAGE" value="Sending request to EmpledadosWSDLEndpoint!!"/>
+            </log>
             <send>
                 <endpoint key="EmpledadosWSDLEndpoint"/>
             </send>

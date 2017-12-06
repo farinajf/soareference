@@ -2,7 +2,7 @@
 <proxy name="EmpleadosThrottleProxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <inSequence>
-            <sequence key="ThrottleSequence"/>
+            <sequence key="ThrottleSequence2"/>
             <send>
                 <endpoint key="EmpledadosWSDLEndpoint"/>
             </send>

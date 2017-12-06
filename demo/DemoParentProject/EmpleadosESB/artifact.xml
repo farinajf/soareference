@@ -14,4 +14,13 @@
     <artifact name="EmpleadosThrottleProxy" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/EmpleadosThrottleProxy.xml</file>
     </artifact>
+    <artifact name="CacheIn" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CacheIn.xml</file>
+    </artifact>
+    <artifact name="CacheOut" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CacheOut.xml</file>
+    </artifact>
+    <artifact name="ThrottleSequence2" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ThrottleSequence2.xml</file>
+    </artifact>
 </artifacts>

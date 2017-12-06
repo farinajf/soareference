@@ -14,14 +14,17 @@
   <name>EmpleadosCAR</name>
   <description>EmpleadosCAR</description>
   <properties>
+    <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence2>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence2>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxy>
     <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
+    <es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheOut>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheOut>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>
+    <es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosThrottleProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosThrottleProxy>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>capp/DataServicesServer</es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>
   </properties>
   <dependencies>
@@ -58,6 +61,24 @@
     <dependency>
       <groupId>es.xunta.amtega.deemo.EmpleadosESB.proxy-service</groupId>
       <artifactId>EmpleadosThrottleProxy</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.sequence</groupId>
+      <artifactId>CacheIn</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.sequence</groupId>
+      <artifactId>CacheOut</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.sequence</groupId>
+      <artifactId>ThrottleSequence2</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>xml</type>
     </dependency>
