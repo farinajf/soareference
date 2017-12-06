@@ -3,8 +3,8 @@
     <log level="full">
         <property name="MESSAGE" value="Executing Cache In Sequence"/>
     </log>
-    <cache collector="false" hashGenerator="org.wso2.carbon.mediator.cache.digest.DOMHASHGenerator" scope="per-host" timeout="10">
+    <cache collector="false" hashGenerator="org.wso2.carbon.mediator.cache.digest.DOMHASHGenerator" scope="per-host" timeout="60">
         <onCacheHit/>
-        <implementation maxSize="100" type="memory"/>
+        <implementation maxSize="1000" type="memory"/>
     </cache>
 </sequence>
