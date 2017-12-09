@@ -20,9 +20,12 @@
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheOut>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheOut>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
+    <es.xunta.amtega.deemo.EmpleadosESB.sequence_._SlowSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._SlowSequence>
     <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence>
+    <es.xunta.amtega.deemo.EmpleadosESB.api_._slowapi>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.api_._slowapi>
+    <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._SlowApiEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._SlowApiEndpoint>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosThrottleProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosThrottleProxy>
     <maven.deploy.skip>true</maven.deploy.skip>
     <es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>capp/DataServicesServer</es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>
@@ -79,6 +82,24 @@
     <dependency>
       <groupId>es.xunta.amtega.deemo.EmpleadosESB.sequence</groupId>
       <artifactId>ThrottleSequence2</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.api</groupId>
+      <artifactId>slowapi</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.endpoint</groupId>
+      <artifactId>SlowApiEndpoint</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.sequence</groupId>
+      <artifactId>SlowSequence</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>xml</type>
     </dependency>
