@@ -32,4 +32,7 @@
     <artifact name="SlowSequence" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/SlowSequence.xml</file>
     </artifact>
+    <artifact name="InMemoryMS" groupId="es.xunta.amtega.deemo.EmpleadosESB.message-store" version="1.0.0-SNAPSHOT" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/InMemoryMS.xml</file>
+    </artifact>
 </artifacts>
