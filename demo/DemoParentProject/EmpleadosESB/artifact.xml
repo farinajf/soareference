@@ -35,4 +35,7 @@
     <artifact name="InMemoryMS" groupId="es.xunta.amtega.deemo.EmpleadosESB.message-store" version="1.0.0-SNAPSHOT" type="synapse/message-store" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/message-stores/InMemoryMS.xml</file>
     </artifact>
+    <artifact name="ScheduledProcessor" groupId="es.xunta.amtega.deemo.EmpleadosESB.message-processors" version="1.0.0-SNAPSHOT" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/ScheduledProcessor.xml</file>
+    </artifact>
 </artifacts>
