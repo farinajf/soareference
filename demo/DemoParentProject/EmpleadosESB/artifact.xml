@@ -38,4 +38,10 @@
     <artifact name="ScheduledProcessor" groupId="es.xunta.amtega.deemo.EmpleadosESB.message-processors" version="1.0.0-SNAPSHOT" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/message-processors/ScheduledProcessor.xml</file>
     </artifact>
+    <artifact name="TestTemplate" groupId="es.xunta.amtega.deemo.EmpleadosESB.template" version="1.0.0-SNAPSHOT" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/TestTemplate.xml</file>
+    </artifact>
+    <artifact name="TestTemplateProxy" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/TestTemplateProxy.xml</file>
+    </artifact>
 </artifacts>
