@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="ConditionalRouterProxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <conditionalRouter continueAfter="true" description="Router">
+                <conditionalRoute asynchronous="true" breakRoute="false">
+                    <condition>
+                        <match regex="bar.*" source="foo" type="header"/>
+                    </condition>
+                    <target sequence="ConditionSeq1"/>
+                </conditionalRoute>
+                <conditionalRoute asynchronous="true" breakRoute="false">
+                    <condition>
+                        <match regex="fran" source="name" type="header"/>
+                    </condition>
+                    <target sequence="ConditionSeq4"/>
+                </conditionalRoute>
+                <conditionalRoute asynchronous="true" breakRoute="false">
+                    <condition>
+                        <and>
+                            <match regex="foo.*" source="my_custom_header1" type="header"/>
+                            <match regex="/services/ConditionalRouterProxy.*" type="url"/>
+                        </and>
+                    </condition>
+                    <target sequence="ConditionSeq2"/>
+                </conditionalRoute>
+                <conditionalRoute asynchronous="true" breakRoute="false">
+                    <condition>
+                        <and>
+                            <match regex="bar.*" source="my_custom_header2" type="header"/>
+                            <equal source="qparam1" type="param" value="qpv_foo"/>
+                            <or>
+                                <match regex="/services/ConditionalRouterProxy.*" type="url"/>
+                                <match regex="foo.*" source="my_custom_header3" type="header"/>
+                            </or>
+                            <not>
+                                <equal source="qparam2" type="param" value="qpv_bar"/>
+                            </not>
+                        </and>
+                    </condition>
+                    <target sequence="ConditionSeq3"/>
+                </conditionalRoute>
+            </conditionalRouter>
+            <sequence key="SimpleStockQuoteService"/>
+        </inSequence>
+        <outSequence>
+            <log description="log" level="full">
+                <property name="RESPONSE" value="Response..........."/>
+            </log>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>

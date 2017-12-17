@@ -47,4 +47,22 @@
     <artifact name="EmpleadosProxySecure" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/EmpleadosProxySecure.xml</file>
     </artifact>
+    <artifact name="ConditionalRouterProxy" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/ConditionalRouterProxy.xml</file>
+    </artifact>
+    <artifact name="ConditionSeq1" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ConditionSeq1.xml</file>
+    </artifact>
+    <artifact name="SimpleStockQuoteService" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SimpleStockQuoteService.xml</file>
+    </artifact>
+    <artifact name="ConditionSeq2" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ConditionSeq2.xml</file>
+    </artifact>
+    <artifact name="ConditionSeq3" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ConditionSeq3.xml</file>
+    </artifact>
+    <artifact name="ConditionSeq4" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ConditionSeq4.xml</file>
+    </artifact>
 </artifacts>

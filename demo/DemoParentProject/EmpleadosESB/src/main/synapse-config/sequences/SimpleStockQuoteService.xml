@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="SimpleStockQuoteService" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="DEBUG" value="Sending message to SimpleStockQuoteService......................."/>
+    </log>
+    <send>
+        <endpoint name="Simple">
+            <address uri="http://localhost:9000/services/SimpleStockQuoteService"/>
+        </endpoint>
+    </send>
+</sequence>

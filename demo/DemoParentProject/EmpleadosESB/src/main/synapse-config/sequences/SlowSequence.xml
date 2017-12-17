@@ -6,6 +6,9 @@
                 <log>
                     <property name="MESSAGE" value="Sending request to SlowApiEndpoint...."/>
                 </log>
+                <call description="">
+                    <endpoint key="SlowApiEndpoint"/>
+                </call>
                 <log>
                     <property name="MESSAGE" value="Receiving response from SlowApiEndpoint...."/>
                 </log>
