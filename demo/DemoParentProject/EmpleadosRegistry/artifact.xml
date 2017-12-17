@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="BasicHTTPSecurityPolicy" groupId="es.xunta.amtega.deemo.EmpleadosRegistry.resource" version="1.0.0-SNAPSHOT" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>BasicHTTPSecurityPolicy.xml</file>
+            <path>/_system/governance/amtega/ws-policy</path>
+            <mediaType>application/wspolicy+xml</mediaType>
+        </item>
+    </artifact>
+</artifacts>

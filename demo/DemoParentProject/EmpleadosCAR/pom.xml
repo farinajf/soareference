@@ -21,15 +21,17 @@
     <es.xunta.amtega.deemo.EmpleadosESB.message-processors_._ScheduledProcessor>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.message-processors_._ScheduledProcessor>
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>
+    <es.xunta.amtega.deemo.EmpleadosRegistry.resource_._BasicHTTPSecurityPolicy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosRegistry.resource_._BasicHTTPSecurityPolicy>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>
     <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._SlowApiEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._SlowApiEndpoint>
+    <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxySecure>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxySecure>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._SlowSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._SlowSequence>
     <es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>capp/DataServicesServer</es.xunta.amtega.deemo.Empleados1DSS.dataservice_._Empleados1DSS>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>
     <es.xunta.amtega.deemo.EmpleadosESB.template_._TestTemplate>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.template_._TestTemplate>
     <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
-    <es.xunta.amtega.deemo.EmpleadosESB.message-store_._InMemoryMS>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.message-store_._InMemoryMS>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence2>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence2>
+    <es.xunta.amtega.deemo.EmpleadosESB.message-store_._InMemoryMS>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.message-store_._InMemoryMS>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._TestTemplateProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._TestTemplateProxy>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence>
     <maven.deploy.skip>true</maven.deploy.skip>
@@ -40,6 +42,12 @@
       <artifactId>Empleados1DSS</artifactId>
       <version>1.0.0</version>
       <type>dbs</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosRegistry.resource</groupId>
+      <artifactId>BasicHTTPSecurityPolicy</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>zip</type>
     </dependency>
     <dependency>
       <groupId>es.xunta.amtega.deemo.EmpleadosESB.api</groupId>
@@ -74,6 +82,12 @@
     <dependency>
       <groupId>es.xunta.amtega.deemo.EmpleadosESB.proxy-service</groupId>
       <artifactId>EmpleadosProxy</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.proxy-service</groupId>
+      <artifactId>EmpleadosProxySecure</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>xml</type>
     </dependency>

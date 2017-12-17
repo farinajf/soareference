@@ -44,4 +44,7 @@
     <artifact name="TestTemplateProxy" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/TestTemplateProxy.xml</file>
     </artifact>
+    <artifact name="EmpleadosProxySecure" groupId="es.xunta.amtega.deemo.EmpleadosESB.proxy-service" version="1.0.0-SNAPSHOT" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/EmpleadosProxySecure.xml</file>
+    </artifact>
 </artifacts>

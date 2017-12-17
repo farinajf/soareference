@@ -15,4 +15,5 @@
         </outSequence>
         <faultSequence/>
     </target>
+    <publishWSDL uri="http://wso2b:8280/services/Empleados1DSS?wsdl"/>
 </proxy>

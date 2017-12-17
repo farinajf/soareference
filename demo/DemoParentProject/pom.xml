@@ -12,6 +12,7 @@
     <module>Empleados1DSS</module>
     <module>EmpleadosESB</module>
     <module>EmpleadosCAR</module>
+    <module>EmpleadosRegistry</module>
   </modules>
   <properties>
     <maven.car.deploy.skip>true</maven.car.deploy.skip>

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoint name="SlowApiEndpoint" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="get" statistics="enable" uri-template="http://localhost:8280/slowapi"/>
+    <http statistics="enable" uri-template="http://localhost:8280/slowapi"/>
 </endpoint>
