@@ -6,4 +6,25 @@
             <mediaType>application/wspolicy+xml</mediaType>
         </item>
     </artifact>
+    <artifact name="FoodMapping" groupId="es.xunta.amtega.deemo.EmpleadosRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>FoodMapping.dmc</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="FoodMapping_inputSchema" groupId="es.xunta.amtega.deemo.EmpleadosRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>FoodMapping_inputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="FoodMapping_outputSchema" groupId="es.xunta.amtega.deemo.EmpleadosRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>FoodMapping_outputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
 </artifacts>

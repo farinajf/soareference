@@ -14,6 +14,7 @@
   <name>EmpleadosCAR</name>
   <description>EmpleadosCAR</description>
   <properties>
+    <es.xunta.amtega.deemo.EmpleadosRegistry.resource_._FoodMapping>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosRegistry.resource_._FoodMapping>
     <es.xunta.amtega.deemo.EmpleadosESB.api_._slowapi>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.api_._slowapi>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosThrottleProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosThrottleProxy>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxy>
@@ -23,6 +24,7 @@
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._ConditionalRouterProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._ConditionalRouterProxy>
     <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._EmpledadosWSDLEndpoint>
     <es.xunta.amtega.deemo.EmpleadosRegistry.resource_._BasicHTTPSecurityPolicy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosRegistry.resource_._BasicHTTPSecurityPolicy>
+    <es.xunta.amtega.deemo.EmpleadosESB.api_._FoodMenuConversion>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.api_._FoodMenuConversion>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._CacheIn>
     <es.xunta.amtega.deemo.EmpleadosESB.endpoint_._SlowApiEndpoint>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.endpoint_._SlowApiEndpoint>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxySecure>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._EmpleadosProxySecure>
@@ -31,7 +33,7 @@
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._SimpleStockQuoteService>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._SimpleStockQuoteService>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._FaultSequence>
     <es.xunta.amtega.deemo.EmpleadosESB.template_._TestTemplate>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.template_._TestTemplate>
-    <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
+    <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,datasource/datasource=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence2>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ThrottleSequence2>
     <es.xunta.amtega.deemo.EmpleadosESB.message-store_._InMemoryMS>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.message-store_._InMemoryMS>
     <es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._TestTemplateProxy>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.proxy-service_._TestTemplateProxy>
@@ -41,6 +43,8 @@
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ConditionSeq3>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ConditionSeq3>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ConditionSeq2>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ConditionSeq2>
     <es.xunta.amtega.deemo.EmpleadosESB.sequence_._ConditionSeq1>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosESB.sequence_._ConditionSeq1>
+    <es.xunta.amtega.deemo.EmpleadosRegistry.resource_._FoodMapping_outputSchema>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosRegistry.resource_._FoodMapping_outputSchema>
+    <es.xunta.amtega.deemo.EmpleadosRegistry.resource_._FoodMapping_inputSchema>capp/EnterpriseServiceBus</es.xunta.amtega.deemo.EmpleadosRegistry.resource_._FoodMapping_inputSchema>
   </properties>
   <dependencies>
     <dependency>
@@ -186,6 +190,30 @@
       <artifactId>TestTemplate</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosRegistry.resource</groupId>
+      <artifactId>FoodMapping</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosRegistry.resource</groupId>
+      <artifactId>FoodMapping_inputSchema</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosESB.api</groupId>
+      <artifactId>FoodMenuConversion</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>es.xunta.amtega.deemo.EmpleadosRegistry.resource</groupId>
+      <artifactId>FoodMapping_outputSchema</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
     </dependency>
   </dependencies>
   <repositories>

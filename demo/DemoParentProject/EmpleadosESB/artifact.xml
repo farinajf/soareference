@@ -65,4 +65,7 @@
     <artifact name="ConditionSeq4" groupId="es.xunta.amtega.deemo.EmpleadosESB.sequence" version="1.0.0-SNAPSHOT" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/ConditionSeq4.xml</file>
     </artifact>
+    <artifact name="FoodMenuConversion" groupId="es.xunta.amtega.deemo.EmpleadosESB.api" version="1.0.0-SNAPSHOT" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/FoodMenuConversion.xml</file>
+    </artifact>
 </artifacts>
