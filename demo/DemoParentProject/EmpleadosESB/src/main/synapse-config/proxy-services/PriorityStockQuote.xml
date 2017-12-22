@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="PriorityStockQuote" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <filter regex="1" source="$trp:priority">
+                <then>
+                    <enqueue description="Enqueue-1" executor="exec" priority="1" sequence="conf:amtega/PrioritySequence.xml"/>
+                </then>
+                <else>
+                    <enqueue description="Enqueue-2" executor="exec" priority="10" sequence="conf:amtega/PrioritySequence.xml"/>
+                </else>
+            </filter>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>
