@@ -4,6 +4,9 @@
         <inSequence>
             <filter regex="1" source="$trp:priority">
                 <then>
+                    <log>
+                        <property name="MESSAGE" value="PRIORITY 1............"/>
+                    </log>
                     <enqueue description="Enqueue-1" executor="exec" priority="1" sequence="conf:amtega/PrioritySequence.xml"/>
                 </then>
                 <else>
