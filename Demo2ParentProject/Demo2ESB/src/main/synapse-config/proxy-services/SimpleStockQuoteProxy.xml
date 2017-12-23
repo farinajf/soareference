@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="SimpleStockQuoteProxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <enrich description="enrich1">
+                <source clone="true" xmlns:m0="http://services.samples" xmlns:m1="http://services.samples/xsd" xpath="//m0:getQuote/m0:request/m1:symbol/text()"/>
+                <target property="ORIGINAL_REQ" type="property"/>
+            </enrich>
+            <enrich description="enrich2">
+                <source clone="true" type="body"/>
+                <target property="REQUEST_PAYLOAD" type="property"/>
+            </enrich>
+            <enrich description="enrich3">
+                <source clone="true" type="inline">
+                    <xs:symbol xmlns:xs="http://services.samples/xsd">MSFT</xs:symbol>
+                </source>
+                <target xmlns:m0="http://services.samples" xmlns:m1="http://services.samples/xsd" xpath="//m0:getQuote/m0:request/m1:symbol"/>
+            </enrich>
+            <log>
+                <property expression="get-property('ORIGINAL_REQ')" name="Original Request Symbol"/>
+                <property expression="get-property('REQUEST_PAYLOAD')" name="Request Payload"/>
+                <property name="M" value="...................................................................................."/>
+            </log>
+            <log description="log1" level="full"/>
+            <send>
+                <endpoint key="SimpleStockQuoteEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <log description="log3">
+                <property name="MESSAGE" value="RESPONSE............................"/>
+            </log>
+            <header name="urn:lastTradeTimestamp" scope="default" value="foo" xmlns:urn="http://synapse.apache.org"/>
+            <enrich description="enrich4">
+                <source clone="true" xmlns:ax21="http://services.samples/xsd" xmlns:ns="http://services.samples" xpath="//ns:getQuoteResponse/ns:return/ax21:lastTradeTimestamp"/>
+                <target xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="http://synapse.apache.org" xpath="/soapenv:Envelope/soapenv:Header/urn:lastTradeTimestamp"/>
+            </enrich>
+            <log description="log2" level="full"/>
+            <log>
+                <property expression="get-property('ORIGINAL_REQ')" name="Original Request Symbol"/>
+                <property expression="get-property('REQUEST_PAYLOAD')" name="Request Payload"/>
+                <property name="M" value="...................................................................................."/>
+            </log>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+    <publishWSDL uri="http://localhost:9000/services/SimpleStockQuoteService?wsdl"/>
+</proxy>
