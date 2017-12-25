@@ -14,15 +14,36 @@
   <name>Demo2ESBCAR</name>
   <description>Demo2ESBCAR</description>
   <properties>
+    <com.example.demo2.Demo2ESB.local-entry_._in_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._in_transform>
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>
+    <com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>
     <com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>
+    <com.example.demo2.Demo2ESB.local-entry_._out_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._out_transform>
     <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,datasource/datasource=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
   </properties>
   <dependencies>
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.endpoint</groupId>
       <artifactId>SimpleStockQuoteEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.local-entry</groupId>
+      <artifactId>in_transform</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.local-entry</groupId>
+      <artifactId>out_transform</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
+      <artifactId>JSONProxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
