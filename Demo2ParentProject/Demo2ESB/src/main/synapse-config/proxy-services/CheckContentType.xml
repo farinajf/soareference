@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="CheckContentType" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <log description="log1" level="custom">
+                <property expression="get-property('transport','Content-Type')" name="_______Content-Type"/>
+            </log>
+            <filter regex="application/xhtml\+xml(.)*" source="get-property('transport','Content-Type')">
+                <then>
+                    <log description="log2">
+                        <property expression="get-property('transport','Content-Type')" name="Content-Type"/>
+                        <property name="Decision" value="Exception, due to unexpected Content-Type."/>
+                    </log>
+                    <makefault description="fault" version="soap11">
+                        <code value="soap11Env:Client" xmlns:soap11Env="http://schemas.xmlsoap.org/soap/envelope/"/>
+                        <reason value="Content-Type Error"/>
+                        <role/>
+                        <detail>Content-Type: application/xhtml+xml is not a valid content type.</detail>
+                    </makefault>
+                    <header action="remove" name="To" scope="default"/>
+                    <send/>
+                </then>
+                <else>
+                    <log description="log3">
+                        <property expression="get-property('transport','Content-Type')" name="Content-Type"/>
+                        <property name="Decision" value="Continue the mediation flow..."/>
+                    </log>
+                    <send>
+                        <endpoint key="SimpleStockQuoteEP"/>
+                    </send>
+                </else>
+            </filter>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+    <publishWSDL uri="http://localhost:9000/services/SimpleStockQuoteService?wsdl"/>
+</proxy>
