@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/xslt" name="XSLTAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <fastXSLT description="fast xslt" key="conf:myresources/discountPayment.xsl"/>
+            <log description="log" level="full"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

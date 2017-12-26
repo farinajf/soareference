@@ -14,4 +14,7 @@
     <artifact name="out_transform" groupId="com.example.demo2.Demo2ESB.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/local-entries/out_transform.xml</file>
     </artifact>
+    <artifact name="XSLTAPI" groupId="com.example.demo2.Demo2ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/XSLTAPI.xml</file>
+    </artifact>
 </artifacts>
