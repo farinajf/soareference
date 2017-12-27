@@ -24,6 +24,7 @@
     <com.example.demo2.Demo2ESB.local-entry_._out_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._out_transform>
     <com.example.demo2.Demo2Registry.resource_._discountPayment>capp/EnterpriseServiceBus</com.example.demo2.Demo2Registry.resource_._discountPayment>
     <com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>
+    <com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>
   </properties>
   <dependencies>
     <dependency>
@@ -71,6 +72,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>SimpleStockQuoteProxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
+      <artifactId>SplitAggregateProxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
