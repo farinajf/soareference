@@ -19,6 +19,7 @@
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <com.example.demo2.Demo2ESB.local-entry_._in_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._in_transform>
     <com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>
+    <com.example.demo2.Demo2ESB.proxy-service_._PayloadFactoryProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._PayloadFactoryProxy>
     <com.example.demo2.Demo2ESB.api_._XSLTAPI>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.api_._XSLTAPI>
     <com.example.demo2.Demo2ESB.proxy-service_._CheckContentType>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._CheckContentType>
     <com.example.demo2.Demo2ESB.local-entry_._out_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._out_transform>
@@ -66,6 +67,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>JSONProxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
+      <artifactId>PayloadFactoryProxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

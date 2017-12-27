@@ -23,4 +23,7 @@
     <artifact name="SplitAggregateProxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/SplitAggregateProxy.xml</file>
     </artifact>
+    <artifact name="PayloadFactoryProxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/PayloadFactoryProxy.xml</file>
+    </artifact>
 </artifacts>
