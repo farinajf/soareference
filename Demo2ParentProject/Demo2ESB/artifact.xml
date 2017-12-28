@@ -29,4 +29,7 @@
     <artifact name="RespondMediatorProxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/RespondMediatorProxy.xml</file>
     </artifact>
+    <artifact name="JSON2Proxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/JSON2Proxy.xml</file>
+    </artifact>
 </artifacts>
