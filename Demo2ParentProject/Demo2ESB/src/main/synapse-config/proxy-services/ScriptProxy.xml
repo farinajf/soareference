@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="ScriptProxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <endpoint>
+            <address format="soap11" uri="http://localhost:9000/services/SimpleStockQuoteService"/>
+        </endpoint>
+        <inSequence>
+            <script function="transformRequest" key="gov:js/stockquoteScript.js" language="js"/>
+        </inSequence>
+        <outSequence>
+            <script function="transformResponse" key="gov:js/stockquoteScript.js" language="js"/>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>

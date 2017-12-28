@@ -6,4 +6,11 @@
             <mediaType/>
         </item>
     </artifact>
+    <artifact name="stockquoteScript" groupId="com.example.demo2.Demo2Registry.resource" version="1.0.0" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>stockquoteScript.js</file>
+            <path>/_system/governance/js</path>
+            <mediaType>application/javascript</mediaType>
+        </item>
+    </artifact>
 </artifacts>

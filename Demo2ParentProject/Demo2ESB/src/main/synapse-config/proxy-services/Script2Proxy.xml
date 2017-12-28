@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="Script2Proxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <endpoint>
+            <address format="soap11" uri="http://localhost:9000/services/SimpleStockQuoteService"/>
+        </endpoint>
+        <inSequence>
+            <script language="js"><![CDATA[var symbol = mc.getPayloadXML()..*::Code.toString();
+            mc.setPayloadXML(
+                <m:getQuote xmlns:m="http://services.samples">
+                    <m:request>
+                        <m1:symbol xmlns:m1="http://services.samples/xsd">{symbol}</m1:symbol>
+                    </m:request>
+                </m:getQuote>);]]></script>
+        </inSequence>
+        <outSequence>
+            <script language="js"><![CDATA[var symbol = mc.getPayloadXML()..*::symbol.toString();
+            var price = mc.getPayloadXML()..*::last.toString();
+            mc.setPayloadXML(
+            <m:CheckPriceResponse xmlns:m="http://services.samples/xsd">
+                <m:Code>{symbol}</m:Code>
+                <m:Price>{price}</m:Price>
+            </m:CheckPriceResponse>);]]></script>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>
