@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="Script3Proxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <script language="js"><![CDATA[mc.setProperty("RESPONSE","true");
+            mc.setPayloadXML(
+            <ns:getQuoteResponse xmlns:ns="http://services.samples/xsd">
+            <ns:return>
+            <ns:last>99.9</ns:last>
+            </ns:return>
+            </ns:getQuoteResponse>
+            );]]></script>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>
