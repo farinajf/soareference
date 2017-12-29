@@ -14,6 +14,7 @@
   <name>Demo2ESBCAR</name>
   <description>Demo2ESBCAR</description>
   <properties>
+    <com.example.demo2.Demo2ESB.proxy-service_._Throttle1Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Throttle1Proxy>
     <com.example.demo2.Demo2Registry.resource_._discountPayment>capp/EnterpriseServiceBus</com.example.demo2.Demo2Registry.resource_._discountPayment>
     <com.example.demo2.Demo2ESB.proxy-service_._ScriptProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._ScriptProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._JSON2Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSON2Proxy>
@@ -127,6 +128,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>SplitAggregateProxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
+      <artifactId>Throttle1Proxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

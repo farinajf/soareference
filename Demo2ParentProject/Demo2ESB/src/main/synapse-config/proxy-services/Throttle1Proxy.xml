@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="Throttle1Proxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <throttle id="A">
+                <policy>
+                    <wsp:Policy wsu:id="WSO2MediatorThrottlingPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                        <throttle:MediatorThrottleAssertion xmlns:throttle="http://www.wso2.org/products/wso2commons/throttle">
+                            <throttle:MaximumConcurrentAccess>2</throttle:MaximumConcurrentAccess>
+                        </throttle:MediatorThrottleAssertion>
+                    </wsp:Policy>
+                </policy>
+                <onReject>
+                    <log>
+                        <property name="text" value="**************************** REJECTED ***********************************"/>
+                    </log>
+                    <makefault version="soap11">
+                        <code value="soap11Env:Client" xmlns:soap11Env="http://schemas.xmlsoap.org/soap/envelope/"/>
+                        <reason value="***Access Denied***"/>
+                    </makefault>
+                    <respond/>
+                    <drop/>
+                </onReject>
+                <onAccept>
+                    <log>
+                        <property name="text" value="------------------------------------ ACCEPTED ------------------------------------"/>
+                    </log>
+                    <send>
+                        <endpoint>
+                            <address uri="http://localhost:9000/services/SimpleStockQuoteService"/>
+                        </endpoint>
+                    </send>
+                </onAccept>
+            </throttle>
+        </inSequence>
+        <outSequence>
+            <throttle id="A">
+                <onReject/>
+                <onAccept/>
+            </throttle>
+            <log>
+                <property name="X" value="OUT SEQUENCE!!"/>
+            </log>
+            <send/>
+        </outSequence>
+        <faultSequence>
+            <throttle id="A">
+                <onReject/>
+                <onAccept/>
+            </throttle>
+            <log>
+                <property name="FAULT" value="++++++++++++++++++++++++++++++++++++++++++++ FAULT +++++++++++++++++++++++++++++++++++++++++++++++"/>
+            </log>
+            <makefault version="soap11">
+                <code value="soap11Env:Client" xmlns:soap11Env="http://schemas.xmlsoap.org/soap/envelope/"/>
+                <reason value="Fault Response!!"/>
+            </makefault>
+            <send/>
+        </faultSequence>
+    </target>
+</proxy>
