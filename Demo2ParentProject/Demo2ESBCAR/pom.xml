@@ -24,12 +24,14 @@
     <com.example.demo2.Demo2Registry.resource_._stockquoteScript>capp/EnterpriseServiceBus</com.example.demo2.Demo2Registry.resource_._stockquoteScript>
     <com.example.demo2.Demo2ESB.proxy-service_._PayloadFactoryProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._PayloadFactoryProxy>
     <com.example.demo2.Demo2ESB.local-entry_._in_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._in_transform>
+    <com.example.demo2.Demo2ESB.message-store_._SampleStore>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-store_._SampleStore>
     <com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>
     <com.example.demo2.Demo2ESB.api_._XSLTAPI>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.api_._XSLTAPI>
     <com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>
     <com.example.demo2.Demo2ESB.proxy-service_._Script2Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Script2Proxy>
     <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,datasource/datasource=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
     <com.example.demo2.Demo2ESB.proxy-service_._Script3Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Script3Proxy>
+    <com.example.demo2.Demo2ESB.proxy-service_._StoreProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._StoreProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._RespondMediatorProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._RespondMediatorProxy>
     <com.example.demo2.Demo2ESB.local-entry_._out_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._out_transform>
     <com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>
@@ -68,6 +70,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.local-entry</groupId>
       <artifactId>out_transform</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.message-store</groupId>
+      <artifactId>SampleStore</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -128,6 +136,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>SplitAggregateProxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
+      <artifactId>StoreProxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

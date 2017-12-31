@@ -44,4 +44,10 @@
     <artifact name="Throttle1Proxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/Throttle1Proxy.xml</file>
     </artifact>
+    <artifact name="StoreProxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/StoreProxy.xml</file>
+    </artifact>
+    <artifact name="SampleStore" groupId="com.example.demo2.Demo2ESB.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/SampleStore.xml</file>
+    </artifact>
 </artifacts>
