@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messageProcessor class="org.apache.synapse.message.processor.impl.forwarder.ScheduledMessageForwardingProcessor" messageStore="SampleStore" name="ScheduledProcessor" targetEndpoint="SimpleStockQuoteEP" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="max.delivery.drop">Disabled</parameter>
+    <parameter name="max.delivery.attempts">-1</parameter>
+    <parameter name="client.retry.interval">60000</parameter>
+    <parameter name="member.count">1</parameter>
+    <parameter name="interval">20000</parameter>
+    <parameter name="is.active">true</parameter>
+</messageProcessor>

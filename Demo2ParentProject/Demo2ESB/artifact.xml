@@ -50,4 +50,19 @@
     <artifact name="SampleStore" groupId="com.example.demo2.Demo2ESB.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/message-stores/SampleStore.xml</file>
     </artifact>
+    <artifact name="ScheduledProcessor" groupId="com.example.demo2.Demo2ESB.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/ScheduledProcessor.xml</file>
+    </artifact>
+    <artifact name="SamplingProcessor" groupId="com.example.demo2.Demo2ESB.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/SamplingProcessor.xml</file>
+    </artifact>
+    <artifact name="DropSequence" groupId="com.example.demo2.Demo2ESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/DropSequence.xml</file>
+    </artifact>
+    <artifact name="MemoryStore" groupId="com.example.demo2.Demo2ESB.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/MemoryStore.xml</file>
+    </artifact>
+    <artifact name="Store2Proxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/Store2Proxy.xml</file>
+    </artifact>
 </artifacts>

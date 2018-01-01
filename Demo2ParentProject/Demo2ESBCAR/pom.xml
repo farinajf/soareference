@@ -18,6 +18,9 @@
     <com.example.demo2.Demo2Registry.resource_._discountPayment>capp/EnterpriseServiceBus</com.example.demo2.Demo2Registry.resource_._discountPayment>
     <com.example.demo2.Demo2ESB.proxy-service_._ScriptProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._ScriptProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._JSON2Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSON2Proxy>
+    <com.example.demo2.Demo2ESB.sequence_._DropSequence>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.sequence_._DropSequence>
+    <com.example.demo2.Demo2ESB.message-store_._MemoryStore>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-store_._MemoryStore>
+    <com.example.demo2.Demo2ESB.message-processors_._ScheduledProcessor>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-processors_._ScheduledProcessor>
     <com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._CheckContentType>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._CheckContentType>
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
@@ -33,8 +36,10 @@
     <com.example.demo2.Demo2ESB.proxy-service_._Script3Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Script3Proxy>
     <com.example.demo2.Demo2ESB.proxy-service_._StoreProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._StoreProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._RespondMediatorProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._RespondMediatorProxy>
+    <com.example.demo2.Demo2ESB.message-processors_._SamplingProcessor>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-processors_._SamplingProcessor>
     <com.example.demo2.Demo2ESB.local-entry_._out_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._out_transform>
     <com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>
+    <com.example.demo2.Demo2ESB.proxy-service_._Store2Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Store2Proxy>
   </properties>
   <dependencies>
     <dependency>
@@ -70,6 +75,24 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.local-entry</groupId>
       <artifactId>out_transform</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.message-processors</groupId>
+      <artifactId>SamplingProcessor</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.message-processors</groupId>
+      <artifactId>ScheduledProcessor</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.message-store</groupId>
+      <artifactId>MemoryStore</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -141,6 +164,12 @@
     </dependency>
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
+      <artifactId>Store2Proxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>StoreProxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
@@ -148,6 +177,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>Throttle1Proxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.sequence</groupId>
+      <artifactId>DropSequence</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
