@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <messageStore class="org.apache.synapse.message.store.impl.jdbc.JDBCMessageStore" name="SampleStore" xmlns="http://ws.apache.org/ns/synapse">
     <parameter name="store.producer.guaranteed.delivery.enable">true</parameter>
+    <parameter name="store.failover.message.store.name">FailoverStore</parameter>
     <parameter name="store.jdbc.password"/>
     <parameter name="store.jdbc.username">root</parameter>
     <parameter name="store.jdbc.driver">com.mysql.jdbc.Driver</parameter>

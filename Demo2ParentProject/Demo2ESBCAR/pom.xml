@@ -15,10 +15,12 @@
   <description>Demo2ESBCAR</description>
   <properties>
     <com.example.demo2.Demo2ESB.proxy-service_._Throttle1Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Throttle1Proxy>
+    <com.example.demo2.Demo2ESB.proxy-service_._Store3Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Store3Proxy>
     <com.example.demo2.Demo2Registry.resource_._discountPayment>capp/EnterpriseServiceBus</com.example.demo2.Demo2Registry.resource_._discountPayment>
     <com.example.demo2.Demo2ESB.proxy-service_._ScriptProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._ScriptProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._JSON2Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSON2Proxy>
     <com.example.demo2.Demo2ESB.sequence_._DropSequence>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.sequence_._DropSequence>
+    <com.example.demo2.Demo2ESB.message-store_._FailoverStore>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-store_._FailoverStore>
     <com.example.demo2.Demo2ESB.message-store_._MemoryStore>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-store_._MemoryStore>
     <com.example.demo2.Demo2ESB.message-processors_._ScheduledProcessor>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-processors_._ScheduledProcessor>
     <com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>
@@ -40,6 +42,7 @@
     <com.example.demo2.Demo2ESB.local-entry_._out_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._out_transform>
     <com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._Store2Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Store2Proxy>
+    <com.example.demo2.Demo2ESB.message-processors_._FailoverProcessor>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-processors_._FailoverProcessor>
   </properties>
   <dependencies>
     <dependency>
@@ -80,6 +83,12 @@
     </dependency>
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.message-processors</groupId>
+      <artifactId>FailoverProcessor</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.message-processors</groupId>
       <artifactId>SamplingProcessor</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
@@ -87,6 +96,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.message-processors</groupId>
       <artifactId>ScheduledProcessor</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.message-store</groupId>
+      <artifactId>FailoverStore</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -165,6 +180,12 @@
     <dependency>
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>Store2Proxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
+      <artifactId>Store3Proxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

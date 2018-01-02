@@ -65,4 +65,13 @@
     <artifact name="Store2Proxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/Store2Proxy.xml</file>
     </artifact>
+    <artifact name="FailoverStore" groupId="com.example.demo2.Demo2ESB.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/FailoverStore.xml</file>
+    </artifact>
+    <artifact name="Store3Proxy" groupId="com.example.demo2.Demo2ESB.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/Store3Proxy.xml</file>
+    </artifact>
+    <artifact name="FailoverProcessor" groupId="com.example.demo2.Demo2ESB.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/FailoverProcessor.xml</file>
+    </artifact>
 </artifacts>
