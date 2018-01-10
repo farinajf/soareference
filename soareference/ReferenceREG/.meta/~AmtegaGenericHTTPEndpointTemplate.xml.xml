@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><resource isCollection="false" md5="30c54b9c7cb5e0eced0213b70182a942" name="AmtegaGenericHTTPEndpointTemplate.xml" path="/_system/governance/amtega/ReferenceREG/AmtegaGenericHTTPEndpointTemplate.xml" registryUrl="https://localhost:9443/registry">
-    <mediaType>application/vnd.wso2.esb.endpoint</mediaType>
-<creator>admin</creator><lastUpdater>admin</lastUpdater><description/><uuid/><registryState>2</registryState></resource>
