@@ -14,6 +14,7 @@
     <artifact name="out_transform" groupId="com.example.demo2.Demo2ESB.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/local-entries/out_transform.xml</file>
     </artifact>
+<<<<<<< HEAD
     <artifact name="XSLTAPI" groupId="com.example.demo2.Demo2ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/XSLTAPI.xml</file>
     </artifact>
@@ -74,4 +75,6 @@
     <artifact name="FailoverProcessor" groupId="com.example.demo2.Demo2ESB.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/message-processors/FailoverProcessor.xml</file>
     </artifact>
+=======
+>>>>>>> aadcdf28cf345d25bcb91dd4b6e36d3e90ad08e1
 </artifacts>

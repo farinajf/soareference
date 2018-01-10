@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="JSONProxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
+<<<<<<< HEAD
         <endpoint>
             <address format="soap11" uri="http://localhost:9000/services/SimpleStockQuoteService"/>
         </endpoint>
         <inSequence>
             <log description="log1" level="full"/>
             <xslt description="xslt1" key="in_transform"/>
+=======
+        <endpoint key="SimpleStockQuoteEP"/>
+        <inSequence>
+            <log description="log1" level="full"/>
+            <xslt description="xslt1" key="in_transform"/>
+            <log description="log2" level="full"/>
+>>>>>>> aadcdf28cf345d25bcb91dd4b6e36d3e90ad08e1
             <property name="messageType" scope="axis2" type="STRING" value="text/xml"/>
             <header name="Action" scope="default" value="urn:getQuote"/>
             <enrich description="enrich">
                 <source clone="true" xmlns:m0="http://services.samples" xpath="//m0:getQuote"/>
                 <target type="body"/>
             </enrich>
+<<<<<<< HEAD
             <log description="log2" level="full">
                 <property name="M" value="......................................."/>
             </log>
         </inSequence>
         <outSequence>
             <log description="log3" level="full"/>
+=======
+            <log description="log4" level="full"/>
+        </inSequence>
+        <outSequence>
+            <log description="log5" level="full"/>
+>>>>>>> aadcdf28cf345d25bcb91dd4b6e36d3e90ad08e1
             <xslt key="out_transform"/>
             <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
             <send/>
