@@ -23,7 +23,7 @@
                 <else>
                     <log description="log3">
                         <property expression="get-property('transport','Content-Type')" name="Content-Type"/>
-                        <property name="Decision" value="Continue the mediation flow..."/>
+                        <property name="Decision" value="Continue the mediation flow...."/>
                     </log>
                     <send>
                         <endpoint key="SimpleStockQuoteEP"/>
