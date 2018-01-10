@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="EMPLEADOS_DataService" groupId="es.xunta.amtega.soa.DemoDSS.dataservice" version="1.0.0" type="service/dataservice" serverRole="DataServicesServer">
-        <file>dataservice/EMPLEADOS_DataService.dbs</file>
-    </artifact>
-    <artifact name="EMPLEADOS_DataService" groupId="es.xunta.amtega.soa.DemoDSS.dataservice" version="1.0.0" type="service/dataservice" serverRole="DataServicesServer">
-        <file>dataservice/EMPLEADOS_DataService.dbs</file>
-    </artifact>
-</artifacts>
