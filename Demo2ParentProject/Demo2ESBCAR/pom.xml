@@ -14,7 +14,6 @@
   <name>Demo2ESBCAR</name>
   <description>Demo2ESBCAR</description>
   <properties>
-<<<<<<< HEAD
     <com.example.demo2.Demo2ESB.proxy-service_._Throttle1Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Throttle1Proxy>
     <com.example.demo2.Demo2ESB.proxy-service_._Store3Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Store3Proxy>
     <com.example.demo2.Demo2Registry.resource_._discountPayment>capp/EnterpriseServiceBus</com.example.demo2.Demo2Registry.resource_._discountPayment>
@@ -26,24 +25,15 @@
     <com.example.demo2.Demo2ESB.message-processors_._ScheduledProcessor>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-processors_._ScheduledProcessor>
     <com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SplitAggregateProxy>
     <com.example.demo2.Demo2ESB.proxy-service_._CheckContentType>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._CheckContentType>
-=======
-    <com.example.demo2.Demo2ESB.local-entry_._in_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._in_transform>
->>>>>>> aadcdf28cf345d25bcb91dd4b6e36d3e90ad08e1
     <maven.car.deploy.skip>false</maven.car.deploy.skip>
     <com.example.demo2.Demo2Registry.resource_._stockquoteScript>capp/EnterpriseServiceBus</com.example.demo2.Demo2Registry.resource_._stockquoteScript>
     <com.example.demo2.Demo2ESB.proxy-service_._PayloadFactoryProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._PayloadFactoryProxy>
     <com.example.demo2.Demo2ESB.local-entry_._in_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._in_transform>
     <com.example.demo2.Demo2ESB.message-store_._SampleStore>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.message-store_._SampleStore>
     <com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._SimpleStockQuoteProxy>
-<<<<<<< HEAD
     <com.example.demo2.Demo2ESB.api_._XSLTAPI>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.api_._XSLTAPI>
     <com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>
     <com.example.demo2.Demo2ESB.proxy-service_._Script2Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Script2Proxy>
-=======
-    <com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._JSONProxy>
-    <com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.endpoint_._SimpleStockQuoteEP>
-    <com.example.demo2.Demo2ESB.local-entry_._out_transform>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.local-entry_._out_transform>
->>>>>>> aadcdf28cf345d25bcb91dd4b6e36d3e90ad08e1
     <artifact.types>jaggery/app=zip,lib/library/bundle=jar,service/rule=aar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,synapse/task=xml,synapse/api=xml,webapp/jaxws=war,service/meta=xml,bpel/workflow=zip,synapse/lib=zip,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,datasource/datasource=xml,synapse/priority-executor=xml,synapse/template=xml,synapse/event-source=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
     <com.example.demo2.Demo2ESB.proxy-service_._Script3Proxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._Script3Proxy>
     <com.example.demo2.Demo2ESB.proxy-service_._StoreProxy>capp/EnterpriseServiceBus</com.example.demo2.Demo2ESB.proxy-service_._StoreProxy>
@@ -92,7 +82,6 @@
       <type>xml</type>
     </dependency>
     <dependency>
-<<<<<<< HEAD
       <groupId>com.example.demo2.Demo2ESB.message-processors</groupId>
       <artifactId>FailoverProcessor</artifactId>
       <version>1.0.0</version>
@@ -141,15 +130,12 @@
       <type>xml</type>
     </dependency>
     <dependency>
-=======
->>>>>>> aadcdf28cf345d25bcb91dd4b6e36d3e90ad08e1
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>JSONProxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
-<<<<<<< HEAD
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>PayloadFactoryProxy</artifactId>
       <version>1.0.0</version>
@@ -180,8 +166,6 @@
       <type>xml</type>
     </dependency>
     <dependency>
-=======
->>>>>>> aadcdf28cf345d25bcb91dd4b6e36d3e90ad08e1
       <groupId>com.example.demo2.Demo2ESB.proxy-service</groupId>
       <artifactId>SimpleStockQuoteProxy</artifactId>
       <version>1.0.0</version>
