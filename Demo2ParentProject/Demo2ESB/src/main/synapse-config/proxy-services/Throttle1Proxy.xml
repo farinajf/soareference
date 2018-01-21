@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<proxy name="Throttle1Proxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+<proxy name="Throttle1Proxy" startOnLoad="true" statistics="enable" trace="enable" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <inSequence>
             <throttle id="A">
