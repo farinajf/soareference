@@ -13,4 +13,18 @@
             <mediaType>application/javascript</mediaType>
         </item>
     </artifact>
+    <artifact name="MyAuthSequence" groupId="com.example.demo2.Demo2Registry.resource" version="1.0.0" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>MyAuthSequence.xml</file>
+            <path>/_system/governance/sequences</path>
+            <mediaType>application/vnd.wso2.template</mediaType>
+        </item>
+    </artifact>
+    <artifact name="profileURL" groupId="com.example.demo2.Demo2Registry.resource" version="1.0.0" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>profileURL.xml</file>
+            <path>/_system/governance/sequences</path>
+            <mediaType>application/xml</mediaType>
+        </item>
+    </artifact>
 </artifacts>

@@ -10,6 +10,7 @@
   <description>Demo2ParentProject</description>
   <modules>
     <module>Demo2ESB</module>
+    <module>Demo2Registry</module>
     <module>Demo2ESBCAR</module>
   </modules>
   <properties>

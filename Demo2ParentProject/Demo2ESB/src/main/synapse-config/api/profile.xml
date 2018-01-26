@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/profile" name="profile" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <payloadFactory media-type="xml">
+                <format>
+                    <inline xmlns="">
+                        <roles>
+                            <rol>grp-frm-plasoa_ei--rw</rol>
+                            <rol>grp-frm-transa--rw</rol>
+                        </roles>
+                    </inline>
+                </format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

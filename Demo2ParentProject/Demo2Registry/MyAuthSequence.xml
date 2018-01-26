@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="MyAuthSequence" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="group_regex"/>
+    <sequence>
+        <call>
+            <endpoint>
+                <http method="get" uri-template="http://localhost:8280/profile"/>
+            </endpoint>
+        </call>
+        <!--
+        http://yasassriratnayake.blogspot.com.es/2015/05/using-xpath-20-functions-with-wso2-esb.html
+        https://docs.wso2.com/display/EI611/Sample+156%3A+Service+Integration+with+specifying+the+receiving+sequence
+        -->
+        <property expression="//roles" name="roles" scope="default" type="STRING"/>
+        <property expression="$func:group_regex" name="TARGET" scope="default" type="STRING"/>
+        <property expression="fn:matches(syn:get-property('roles'),syn:get-property('TARGET'))" name="match" scope="default" type="STRING" xmlns:fn="http://www.w3.org/2005/xpath-functions"/>
+        <log>
+            <property expression="get-property('roles')" name="ROLES"/>
+            <property expression="get-property('TARGET')" name="TARGET"/>
+            <property expression="get-property('match')" name="MATCH"/>
+        </log>
+        <filter regex="true" source="get-property('match')">
+            <then>
+                <log>
+                    <property name="X" value="......................................................YES"/>
+                </log>
+            </then>
+            <else>
+                <log>
+                    <property name="X" value="......................................................NO"/>
+                </log>
+            </else>
+        </filter>
+    </sequence>
+</template>
