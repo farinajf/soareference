@@ -6,7 +6,7 @@
                 <property name="X" value=".....................SECURED PROXY....................."/>
             </log>
             <call-template target="gov:sequences/MyAuthSequence.xml">
-                <with-param name="group_regex" value=".*grp-frm5-plasoa_ei--rw.*"/>
+                <with-param name="group_regex" value="grp-frm-plasoa_ei--rw"/>
             </call-template>
             <payloadFactory media-type="xml">
                 <format>

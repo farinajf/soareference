@@ -10,6 +10,7 @@
         <!--
         http://yasassriratnayake.blogspot.com.es/2015/05/using-xpath-20-functions-with-wso2-esb.html
         https://docs.wso2.com/display/EI611/Sample+156%3A+Service+Integration+with+specifying+the+receiving+sequence
+        http://zvon.org/comp/r/ref-XPath_2.html#Functions~exists
         -->
         <property expression="//roles" name="roles" scope="default" type="STRING"/>
         <property expression="$func:group_regex" name="TARGET" scope="default" type="STRING"/>
