@@ -13,11 +13,11 @@
         http://zvon.org/comp/r/ref-XPath_2.html#Functions~exists
         -->
         <property expression="//roles" name="roles" scope="default" type="STRING"/>
-        <property expression="$func:group_regex" name="TARGET" scope="default" type="STRING"/>
-        <property expression="fn:matches(syn:get-property('roles'),syn:get-property('TARGET'))" name="match" scope="default" type="STRING" xmlns:fn="http://www.w3.org/2005/xpath-functions"/>
+        <property expression="$func:group_regex" name="target" scope="default" type="STRING"/>
+        <property expression="fn:matches(syn:get-property('roles'),syn:get-property('target'))" name="match" scope="default" type="STRING" xmlns:fn="http://www.w3.org/2005/xpath-functions"/>
         <log>
             <property expression="get-property('roles')" name="ROLES"/>
-            <property expression="get-property('TARGET')" name="TARGET"/>
+            <property expression="get-property('target')" name="TARGET"/>
             <property expression="get-property('match')" name="MATCH"/>
         </log>
         <filter regex="true" source="get-property('match')">
